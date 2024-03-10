@@ -35,7 +35,7 @@ const AppStructure = (props) => {
             })
 
         // forecast
-        axios.get(`http://api.weatherapi.com/v1/forecast.json?key=82130c35c5e044afaf4184922230207&q=${location}&days=7&aqi=no&alerts=no&lang=uk`, { validateStatus: false })
+        axios.get(`https://api.weatherapi.com/v1/forecast.json?key=82130c35c5e044afaf4184922230207&q=${location}&days=7&aqi=no&alerts=no&lang=uk`, { validateStatus: false })
             .then(res => {
                 if (res.data.error) {
                     toast.error(res.data.error.message)
