@@ -24,7 +24,7 @@ const MainPageInfo = (props) => {
         realDays.push(forecastDay)
         realDaysData.push(forecastItem)
 
-        return (<Route key={'dayroute' + index} path={'/' + forecastDay} element={<DayPage day={forecastDay} forecast={forecastItem} />} />)
+        return (<Route key={'dayroute' + index} path={'/weather-app/' + forecastDay} element={<DayPage day={forecastDay} forecast={forecastItem} />} />)
     })
 
     return (
