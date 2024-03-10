@@ -9,7 +9,7 @@ const ForecastNav = (props) => {
         const currentDay = currentForecast.day
 
         return (
-            <Link key={'navLink' + index} className={s.nav__item} to={'/' + day}>
+            <Link key={'navLink' + index} className={s.nav__item} to={'/weather-app/' + day}>
                 <h4 className={s.nav__day}>{day}</h4>
                 <img className={s.nav__icon} src={currentDay.condition.icon} />
                 <div className={s.nav__temp}>
