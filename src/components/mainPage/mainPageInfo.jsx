@@ -30,7 +30,7 @@ const MainPageInfo = (props) => {
     return (
         <div className={s.info}>
             <Routes>
-                <Route path={'/'} element={<MainPage s={props.s} weather={props.weather} />} />
+                <Route path={'/weather-app'} element={<MainPage s={props.s} weather={props.weather} />} />
                 {forecastItems}
             </Routes>
 
